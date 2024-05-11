@@ -1,0 +1,27 @@
+var questionData = [
+    {
+        question:"Q1",
+        choices:["C1","C2","C3","C4"],
+        answer:"C2"
+    },
+    {
+        question:"Q2",
+        choices:["C1","C2","C3","C4"],
+        answer:"C4"
+    },
+    {
+        question:"Q3",
+        choices:["C1","C2","C3","C4"],
+        answer:"C1"
+    },
+    {
+        question:"Q4",
+        choices:["C1","C2","C3","C4"],
+        answer:"C3"
+    },
+    {
+        question:"Q5",
+        choices:["C1","C2","C3","C4"],
+        answer:"C2"
+    }
+]
