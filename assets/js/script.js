@@ -7,6 +7,7 @@ var questionTitleEl=document.getElementById("question-title")
 var choiceListEl=document.getElementById("choice-list")
 var timerEl=document.getElementById("timer")
 var messageEl=document.getElementById("message")
+var finalScoreEl=document.getElementById("score")
 var setIntervalId
 var timeLeft=questionData.length * 15
 var index=0
@@ -26,7 +27,7 @@ function renderQuestion(){
         var li=document.createElement("li")
         var button=document.createElement("button")
         button.textContent=questionData[index].choices[i]
-        li.appendChild(buton)
+        li.appendChild(button)
         choiceListEl.appendChild(li)
     }
 
@@ -61,6 +62,8 @@ function nextQuestion(event){
 function endQuiz(){
     clearInterval(setIntervalId)
     questionSectionEl.classList.add("hide")
+    initialInputEl.classList.remove("hide")
+    finalScoreEl.textContent=timerEl.textContent
 }
 startQuizEl.addEventListener("click",startQuiz)
 choiceListEl.addEventListener("click",nextQuestion)
